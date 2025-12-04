@@ -1,0 +1,99 @@
+version: '3.8'
+
+x-common-config:
+  &common-config
+  image: openagents:latest
+  build: .
+  environment:
+    - OPENAGENTS_JWT_SECRET=${OPENAGENTS_JWT_SECRET:-default_secret_key_change_in_production}
+    - OPENAGENTS_HOST=network-server
+  networks:
+    - openagents-network
+  volumes:
+    - openagents-data:/var/data/openagents
+
+volumes:
+  openagents-data:
+    driver: local
+
+networks:
+  openagents-network:
+    driver: bridge
+
+services:
+  network-server:
+    <<: *common-config
+    container_name: openagents-network-server
+    command: python -m openagents.network.server --network-config ./my_first_network/network.yaml
+    ports:
+      - "8600:8600"
+      - "8700:8700"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8700/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    restart: unless-stopped
+
+  diagnosis-agent:
+    <<: *common-config
+    container_name: openagents-diagnosis-agent
+    command: python ./my_first_network/agents/diagnosis_agent.py
+    depends_on:
+      network-server:
+        condition: service_healthy
+    restart: unless-stopped
+
+  planning-agent:
+    <<: *common-config
+    container_name: openagents-planning-agent
+    command: python ./my_first_network/agents/planning_agent.py
+    depends_on:
+      network-server:
+        condition: service_healthy
+    restart: unless-stopped
+
+  tutoring-agent:
+    <<: *common-config
+    container_name: openagents-tutoring-agent
+    command: python ./my_first_network/agents/tutoring_agent.py
+    depends_on:
+      network-server:
+        condition: service_healthy
+    restart: unless-stopped
+
+  review-agent:
+    <<: *common-config
+    container_name: openagents-review-agent
+    command: python ./my_first_network/agents/review_agent.py
+    depends_on:
+      network-server:
+        condition: service_healthy
+    restart: unless-stopped
+
+  custom-agent:
+    <<: *common-config
+    container_name: openagents-custom-agent
+    command: python ./my_first_network/agents/custom_agent.py
+    depends_on:
+      network-server:
+        condition: service_healthy
+    restart: unless-stopped
+
+  custom-agent-v2:
+    <<: *common-config
+    container_name: openagents-custom-agent-v2
+    command: python ./my_first_network/agents/custom_agent_v2.py
+    depends_on:
+      network-server:
+        condition: service_healthy
+    restart: unless-stopped
+
+  simple-agent:
+    <<: *common-config
+    container_name: openagents-simple-agent
+    command: python ./my_first_network/agents/simple_agent.py
+    depends_on:
+      network-server:
+        condition: service_healthy
+    restart: unless-stopped

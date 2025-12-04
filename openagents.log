@@ -1,0 +1,678 @@
+Created network.yaml in workspace
+Created agents/llm_agent.py in workspace
+Created agents/simple_agent.py in workspace
+Created events/ directory in workspace
+Created tools/ directory in workspace
+Created mods/ directory in workspace
+Using workspace directory: ./my_first_network
+Auto-discovered network configuration: my_first_network\network.yaml
+Loaded network configuration from my_first_network\network.yaml
+Initializing WorkspaceManager at my_first_network
+Workspace initialized successfully at my_first_network
+AgentIdentityManager initialized with session timeout=24h
+Loading 2 network mods from NetworkConfig...
+Initializing network mod openagents.mods.workspace.messaging
+Initializing Thread Messaging network mod
+Successfully loaded network mod: openagents.mods.workspace.messaging
+Initializing network mod openagents.mods.core.shared_cache
+Initializing Shared Cache mod
+Successfully loaded network mod: openagents.mods.core.shared_cache
+Mod openagents.mods.workspace.messaging bound to network default-network-1
+Using file storage at my_first_network\mods\openagents.mods.workspace.messaging\files
+Initialized channels: ['general']
+Registered network mod: openagents.mods.workspace.messaging
+Mod openagents.mods.core.shared_cache bound to network default-network-1
+Using cache storage at my_first_network\mods\openagents.mods.core.shared_cache\shared_cache
+Using files storage at my_first_network\mods\openagents.mods.core.shared_cache\shared_cache\files
+Registered network mod: openagents.mods.core.shared_cache
+Successfully loaded 2 network mods
+Created network: DefaultNetwork
+Loaded 2 network mods: ['openagents.mods.workspace.messaging', 'openagents.mods.core.shared_cache']
+Workspace path: my_first_network
+Workspace initialized with 2 mod directories
+HTTP transport listening on 0.0.0.0:8700
+Started TransportType.HTTP transport on 0.0.0.0:8700
+gRPC transport initialized
+gRPC transport listening on 0.0.0.0:8600
+Started TransportType.GRPC transport on 0.0.0.0:8600
+Centralized topology initialized with 2 transports
+Agent network 'DefaultNetwork' initialized successfully
+Network 'DefaultNetwork' started successfully
+Network mode: centralized
+Transport TransportType.HTTP: 0.0.0.0:8700
+Transport TransportType.GRPC: 0.0.0.0:8600
+Network statistics: {'network_id': 'default-network-1', 'network_name': 'DefaultNetwork', 'is_running': True, 'uptime_seconds': 0.0048923492431640625, 'agent_count': 0, 'agents': {}, 'groups': {}, 'group_config': [{'name': 'guest', 'description': 'Default group for agents without specific credentials', 'agent_count': 0, 'metadata': {}, 'has_password': False}], 'default_agent_group': 'guest', 'requires_password': False, 'mods': [{'name': 'openagents.mods.workspace.messaging', 'enabled': True, 'config': {'default_channels': [{'name': 'general', 'description': 'General chat channel'}], 'max_thread_depth': 5}}, {'name': 'openagents.mods.core.shared_cache', 'enabled': True, 'config': {}}], 'dynamic_mods': {'loaded': [], 'count': 0, 'details': {}}, 'topology_mode': 'centralized', 'transports': [{'type': <TransportType.HTTP: 'http'>, 'config': {'port': 8700}}, {'type': <TransportType.GRPC: 'grpc'>, 'config': {'port': 8600, 'max_message_size': 104857600, 'compression': 'gzip', 'keepalive_time': 60000, 'keepalive_timeout': 30000}}], 'manifest_transport': 'http', 'recommended_transport': 'grpc', 'max_connections': 100, 'readme': None, 'network_profile': {'discoverable': True, 'name': 'Default Workspace', 'description': 'A simple OpenAgents network to get you started', 'tags': ['default', 'starter'], 'categories': ['general'], 'country': 'Worldwide', 'required_openagents_version': '0.7.0', 'capacity': 100, 'authentication': {'type': 'none'}, 'host': '0.0.0.0', 'port': 8700}}
+Running network indefinitely (Ctrl+C to stop)
+Starting heartbeat monitor (interval: 60s, timeout: 180s)
+127.0.0.1 [04/Dec/2025:17:24:41 +0800] "GET /api/health HTTP/1.1" 200 1810 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; zh-CN) WindowsPowerShell/5.1.26100.7019"
+Using workspace directory: ./my_first_network
+Auto-discovered network configuration: my_first_network\network.yaml
+Loaded network configuration from my_first_network\network.yaml
+Initializing WorkspaceManager at my_first_network
+Workspace initialized successfully at my_first_network
+AgentIdentityManager initialized with session timeout=24h
+Loading 2 network mods from NetworkConfig...
+Initializing network mod openagents.mods.workspace.messaging
+Initializing Thread Messaging network mod
+Successfully loaded network mod: openagents.mods.workspace.messaging
+Initializing network mod openagents.mods.core.shared_cache
+Initializing Shared Cache mod
+Successfully loaded network mod: openagents.mods.core.shared_cache
+Mod openagents.mods.workspace.messaging bound to network default-network-1
+Using file storage at my_first_network\mods\openagents.mods.workspace.messaging\files
+Initialized channels: ['general', 'tech-talk', 'random', 'help']
+Registered network mod: openagents.mods.workspace.messaging
+Mod openagents.mods.core.shared_cache bound to network default-network-1
+Using cache storage at my_first_network\mods\openagents.mods.core.shared_cache\shared_cache
+Using files storage at my_first_network\mods\openagents.mods.core.shared_cache\shared_cache\files
+Registered network mod: openagents.mods.core.shared_cache
+Successfully loaded 2 network mods
+Created network: DefaultNetwork
+Loaded 2 network mods: ['openagents.mods.workspace.messaging', 'openagents.mods.core.shared_cache']
+Workspace path: my_first_network
+Workspace initialized with 2 mod directories
+HTTP transport listening on 0.0.0.0:8700
+Started TransportType.HTTP transport on 0.0.0.0:8700
+gRPC transport initialized
+gRPC transport listening on 0.0.0.0:8600
+Started TransportType.GRPC transport on 0.0.0.0:8600
+Centralized topology initialized with 2 transports
+Agent network 'DefaultNetwork' initialized successfully
+Network 'DefaultNetwork' started successfully
+Network mode: centralized
+Transport TransportType.HTTP: 0.0.0.0:8700
+Transport TransportType.GRPC: 0.0.0.0:8600
+Network statistics: {'network_id': 'default-network-1', 'network_name': 'DefaultNetwork', 'is_running': True, 'uptime_seconds': 0.004572629928588867, 'agent_count': 0, 'agents': {}, 'groups': {}, 'group_config': [{'name': 'guest', 'description': 'Default group for agents without specific credentials', 'agent_count': 0, 'metadata': {}, 'has_password': False}], 'default_agent_group': 'guest', 'requires_password': False, 'mods': [{'name': 'openagents.mods.workspace.messaging', 'enabled': True, 'config': {'default_channels': [{'name': 'general', 'description': 'General discussions'}, {'name': 'tech-talk', 'description': 'Technical discussions about AI'}, {'name': 'random', 'description': 'Off-topic conversations'}, {'name': 'help', 'description': 'Ask for help here'}], 'max_thread_depth': 5}}, {'name': 'openagents.mods.core.shared_cache', 'enabled': True, 'config': {}}], 'dynamic_mods': {'loaded': [], 'count': 0, 'details': {}}, 'topology_mode': 'centralized', 'transports': [{'type': <TransportType.HTTP: 'http'>, 'config': {'port': 8700}}, {'type': <TransportType.GRPC: 'grpc'>, 'config': {'port': 8600, 'max_message_size': 104857600, 'compression': 'gzip', 'keepalive_time': 60000, 'keepalive_timeout': 30000}}], 'manifest_transport': 'http', 'recommended_transport': 'grpc', 'max_connections': 100, 'readme': None, 'network_profile': {'discoverable': True, 'name': 'Default Workspace', 'description': 'A simple OpenAgents network to get you started', 'tags': ['default', 'starter'], 'categories': ['general'], 'country': 'Worldwide', 'required_openagents_version': '0.7.0', 'capacity': 100, 'authentication': {'type': 'none'}, 'host': '0.0.0.0', 'port': 8700}}
+Running network indefinitely (Ctrl+C to stop)
+Starting heartbeat monitor (interval: 60s, timeout: 180s)
+127.0.0.1 [04/Dec/2025:17:25:32 +0800] "GET /api/health HTTP/1.1" 200 1997 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; zh-CN) WindowsPowerShell/5.1.26100.7019"
+127.0.0.1 [04/Dec/2025:17:26:11 +0800] "GET /?ide_webview_request_time=1764840371138 HTTP/1.1" 200 5746 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) TraeCN/1.104.3 Chrome/138.0.7204.251 Electron/37.6.1 Safari/537.36"
+127.0.0.1 [04/Dec/2025:17:26:11 +0800] "GET /@vite/client HTTP/1.1" 404 174 "http://localhost:8700/?ide_webview_request_time=1764840371138" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) TraeCN/1.104.3 Chrome/138.0.7204.251 Electron/37.6.1 Safari/537.36"
+127.0.0.1 [04/Dec/2025:17:29:54 +0800] "GET /?ide_webview_request_time=1764840371138 HTTP/1.1" 200 5747 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) TraeCN/1.104.3 Chrome/138.0.7204.251 Electron/37.6.1 Safari/537.36"
+127.0.0.1 [04/Dec/2025:17:29:54 +0800] "GET /@vite/client HTTP/1.1" 404 174 "http://localhost:8700/?ide_webview_request_time=1764840371138" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) TraeCN/1.104.3 Chrome/138.0.7204.251 Electron/37.6.1 Safari/537.36"
+127.0.0.1 [04/Dec/2025:17:42:04 +0800] "GET /?ide_webview_request_time=1764840371138 HTTP/1.1" 200 5748 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) TraeCN/1.104.3 Chrome/138.0.7204.251 Electron/37.6.1 Safari/537.36"
+127.0.0.1 [04/Dec/2025:17:42:04 +0800] "GET /@vite/client HTTP/1.1" 404 174 "http://localhost:8700/?ide_webview_request_time=1764840371138" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) TraeCN/1.104.3 Chrome/138.0.7204.251 Electron/37.6.1 Safari/537.36"
+127.0.0.1 [04/Dec/2025:18:01:20 +0800] "GET /api/health HTTP/1.1" 200 1997 "-" "Python/3.14 aiohttp/3.13.2"
+Agent registration: custom-agent
+Registered agent custom-agent in centralized registry (group: guest)
+Registered agent custom-agent with network in group 'guest'
+Periodic dump completed: 1 messages dumped
+Channel general has agents: {'custom-agent'}
+Message sender: custom-agent
+No other agents to notify in channel general - only sender custom-agent present
+127.0.0.1 [04/Dec/2025:18:01:39 +0800] "GET /api/health HTTP/1.1" 200 2152 "-" "Python/3.14 aiohttp/3.13.2"
+Agent registration: simple-worker
+Registered agent simple-worker in centralized registry (group: guest)
+Registered agent simple-worker with network in group 'guest'
+Channel general has agents: {'custom-agent', 'simple-worker'}
+Message sender: simple-worker
+Agents to notify: {'custom-agent'}
+Broadcasting channel message to 1 agents in general: {'custom-agent'}
+127.0.0.1 [04/Dec/2025:18:02:06 +0800] "GET /api/health HTTP/1.1" 200 2302 "-" "Python/3.14 aiohttp/3.13.2"
+Agent registration: custom-agent
+Agent custom-agent already registered with network
+Agent unregistration: custom-agent
+127.0.0.1 [04/Dec/2025:18:02:32 +0800] "GET /api/health HTTP/1.1" 200 2302 "-" "Python/3.14 aiohttp/3.13.2"
+Agent registration: custom-agent-v2
+Registered agent custom-agent-v2 in centralized registry (group: guest)
+Registered agent custom-agent-v2 with network in group 'guest'
+Channel general has agents: {'custom-agent-v2', 'custom-agent', 'simple-worker'}
+Message sender: custom-agent-v2
+Agents to notify: {'custom-agent', 'simple-worker'}
+Broadcasting channel message to 2 agents in general: {'custom-agent', 'simple-worker'}
+127.0.0.1 [04/Dec/2025:19:03:37 +0800] "GET /api/health HTTP/1.1" 200 2455 "-" "Python/3.14 aiohttp/3.13.2"
+Agent registration: workeragent
+Registered agent workeragent in centralized registry (group: guest)
+Registered agent workeragent with network in group 'guest'
+Periodic dump completed: 5 messages dumped
+127.0.0.1 [04/Dec/2025:19:07:07 +0800] "GET /api/health HTTP/1.1" 200 2601 "-" "Python/3.14 aiohttp/3.13.2"
+Agent registration: workeragent
+Agent workeragent already registered with network
+127.0.0.1 [04/Dec/2025:19:13:03 +0800] "GET /api/health HTTP/1.1" 200 2601 "-" "Python/3.14 aiohttp/3.13.2"
+Agent registration: diagnosis-agent
+Registered agent diagnosis-agent in centralized registry (group: guest)
+Registered agent diagnosis-agent with network in group 'guest'
+Channel tech-talk has agents: {'custom-agent', 'diagnosis-agent', 'custom-agent-v2', 'workeragent', 'simple-worker'}
+Message sender: diagnosis-agent
+Agents to notify: {'custom-agent-v2', 'custom-agent', 'workeragent', 'simple-worker'}
+Broadcasting channel message to 4 agents in tech-talk: {'custom-agent-v2', 'custom-agent', 'workeragent', 'simple-worker'}
+127.0.0.1 [04/Dec/2025:19:13:53 +0800] "GET /api/health HTTP/1.1" 200 2754 "-" "Python/3.14 aiohttp/3.13.2"
+Agent registration: planning-agent
+Registered agent planning-agent in centralized registry (group: guest)
+Registered agent planning-agent with network in group 'guest'
+Periodic dump completed: 12 messages dumped
+Channel tech-talk has agents: {'custom-agent', 'planning-agent', 'diagnosis-agent', 'custom-agent-v2', 'workeragent', 'simple-worker'}
+Message sender: planning-agent
+Agents to notify: {'custom-agent', 'diagnosis-agent', 'custom-agent-v2', 'workeragent', 'simple-worker'}
+Broadcasting channel message to 5 agents in tech-talk: {'custom-agent', 'diagnosis-agent', 'custom-agent-v2', 'workeragent', 'simple-worker'}
+Agent unregistration: simple-worker
+Unregistered agent simple-worker from centralized registry
+Unregistered agent simple-worker from network
+Unregistered agent simple-worker from Thread Messaging protocol
+127.0.0.1 [04/Dec/2025:19:14:56 +0800] "GET /api/health HTTP/1.1" 200 2755 "-" "Python/3.14 aiohttp/3.13.2"
+Agent registration: tutoring-agent
+Registered agent tutoring-agent in centralized registry (group: guest)
+Registered agent tutoring-agent with network in group 'guest'
+Channel tech-talk has agents: {'custom-agent', 'planning-agent', 'diagnosis-agent', 'custom-agent-v2', 'workeragent', 'tutoring-agent'}
+Message sender: tutoring-agent
+Agents to notify: {'custom-agent', 'planning-agent', 'diagnosis-agent', 'custom-agent-v2', 'workeragent'}
+Broadcasting channel message to 5 agents in tech-talk: {'custom-agent', 'planning-agent', 'diagnosis-agent', 'custom-agent-v2', 'workeragent'}
+Shutting down network...
+Heartbeat monitor cancelled
+Shutdown TransportType.HTTP transport
+gRPC server shutdown
+Shutdown TransportType.GRPC transport
+Centralized topology shutdown
+Agent network 'DefaultNetwork' shutdown successfully
+Network shutdown complete
+Network launcher interrupted by user
+Using workspace directory: my_first_network
+Auto-discovered network configuration: my_first_network\network.yaml
+Loaded network configuration from my_first_network\network.yaml
+Initializing WorkspaceManager at my_first_network
+Workspace initialized successfully at my_first_network
+AgentIdentityManager initialized with session timeout=24h
+Loading 3 network mods from NetworkConfig...
+Initializing network mod openagents.mods.workspace.messaging
+Initializing Thread Messaging network mod
+Successfully loaded network mod: openagents.mods.workspace.messaging
+Initializing network mod openagents.mods.core.shared_cache
+Initializing Shared Cache mod
+Successfully loaded network mod: openagents.mods.core.shared_cache
+Could not import network mod openagents.mods.education.learning_diagnosis: No module named 'openagents.mods.education'
+Mod openagents.mods.workspace.messaging bound to network production-network-1
+Using file storage at my_first_network\mods\openagents.mods.workspace.messaging\files
+Loaded 12 messages from storage
+Initialized channels: ['general', 'tech-talk', 'admin']
+Registered network mod: openagents.mods.workspace.messaging
+Mod openagents.mods.core.shared_cache bound to network production-network-1
+Using cache storage at my_first_network\mods\openagents.mods.core.shared_cache\shared_cache
+Using files storage at my_first_network\mods\openagents.mods.core.shared_cache\shared_cache\files
+Registered network mod: openagents.mods.core.shared_cache
+Successfully loaded 2 network mods
+Created network: ProductionNetwork
+Loaded 2 network mods: ['openagents.mods.workspace.messaging', 'openagents.mods.core.shared_cache']
+Workspace path: my_first_network
+Workspace initialized with 3 mod directories
+HTTP transport listening on 0.0.0.0:8700
+Started TransportType.HTTP transport on 0.0.0.0:8700
+gRPC transport initialized
+gRPC transport listening on 0.0.0.0:8600
+Started TransportType.GRPC transport on 0.0.0.0:8600
+Centralized topology initialized with 2 transports
+Agent network 'ProductionNetwork' initialized successfully
+Network 'ProductionNetwork' started successfully
+Network mode: centralized
+Transport TransportType.HTTP: 0.0.0.0:8700
+Transport TransportType.GRPC: 0.0.0.0:8600
+Network statistics: {'network_id': 'production-network-1', 'network_name': 'ProductionNetwork', 'is_running': True, 'uptime_seconds': 0.004678010940551758, 'agent_count': 0, 'agents': {}, 'groups': {}, 'group_config': [{'name': 'guest', 'description': 'Default group for agents without specific credentials', 'agent_count': 0, 'metadata': {}, 'has_password': False}], 'default_agent_group': 'guest', 'requires_password': False, 'mods': [{'name': 'openagents.mods.workspace.messaging', 'enabled': True, 'config': {'default_channels': [{'name': 'general', 'description': 'General discussions'}, {'name': 'tech-talk', 'description': 'Technical discussions about AI'}, {'name': 'admin', 'description': 'Administrative discussions'}], 'max_thread_depth': 10}}, {'name': 'openagents.mods.core.shared_cache', 'enabled': True, 'config': {}}, {'name': 'openagents.mods.education.learning_diagnosis', 'enabled': True, 'config': {}}], 'dynamic_mods': {'loaded': [], 'count': 0, 'details': {}}, 'topology_mode': 'centralized', 'transports': [{'type': <TransportType.HTTP: 'http'>, 'config': {'host': '0.0.0.0', 'port': 8700, 'cors_enabled': True}}, {'type': <TransportType.GRPC: 'grpc'>, 'config': {'host': '0.0.0.0', 'port': 8600, 'max_message_size': 104857600, 'compression': 'gzip', 'keepalive_time': 300000, 'keepalive_timeout': 60000}}], 'manifest_transport': 'http', 'recommended_transport': 'grpc', 'max_connections': 500, 'readme': None, 'network_profile': {'discoverable': True, 'name': 'Production Learning Assistant Network', 'description': 'A production OpenAgents network for personalized learning assistance', 'tags': ['production', 'education', 'ai'], 'categories': ['education'], 'country': 'Worldwide', 'required_openagents_version': '0.7.0', 'capacity': 1000, 'authentication': {'type': 'jwt', 'config': {'secret_key': '${OPENAGENTS_JWT_SECRET}', 'expires_in': 3600}}, 'host': '0.0.0.0', 'port': 8700}}
+Running network indefinitely (Ctrl+C to stop)
+Starting heartbeat monitor (interval: 300s, timeout: 300s)
+127.0.0.1 [04/Dec/2025:19:32:02 +0800] "GET /?ide_webview_request_time=1764840371138 HTTP/1.1" 200 5805 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) TraeCN/1.104.3 Chrome/138.0.7204.251 Electron/37.6.1 Safari/537.36"
+127.0.0.1 [04/Dec/2025:19:32:02 +0800] "GET /@vite/client HTTP/1.1" 404 174 "http://localhost:8700/?ide_webview_request_time=1764840371138" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) TraeCN/1.104.3 Chrome/138.0.7204.251 Electron/37.6.1 Safari/537.36"
+127.0.0.1 [04/Dec/2025:19:32:21 +0800] "GET /?ide_webview_request_time=1764840371138 HTTP/1.1" 200 5806 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) TraeCN/1.104.3 Chrome/138.0.7204.251 Electron/37.6.1 Safari/537.36"
+127.0.0.1 [04/Dec/2025:19:32:21 +0800] "GET /@vite/client HTTP/1.1" 404 174 "http://localhost:8700/?ide_webview_request_time=1764840371138" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) TraeCN/1.104.3 Chrome/138.0.7204.251 Electron/37.6.1 Safari/537.36"
+Agent unregistration: custom-agent-v2
+192.168.4.179 [04/Dec/2025:19:33:29 +0800] "GET /health HTTP/1.1" 404 174 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:19:33:29 +0800] "GET /favicon.ico HTTP/1.1" 404 174 "http://192.168.4.179:8700/health" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:19:33:43 +0800] "GET /health HTTP/1.1" 404 174 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; zh-CN) WindowsPowerShell/5.1.26100.7019"
+192.168.4.179 [04/Dec/2025:19:34:36 +0800] "GET /health HTTP/1.1" 404 174 "-" "python-requests/2.32.5"
+192.168.4.179 [04/Dec/2025:19:35:21 +0800] "GET /manifest HTTP/1.1" 404 174 "-" "python-requests/2.32.5"
+127.0.0.1 [04/Dec/2025:19:37:18 +0800] "GET /?ide_webview_request_time=1764840371138 HTTP/1.1" 200 5807 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) TraeCN/1.104.3 Chrome/138.0.7204.251 Electron/37.6.1 Safari/537.36"
+127.0.0.1 [04/Dec/2025:19:37:18 +0800] "GET /@vite/client HTTP/1.1" 404 174 "http://localhost:8700/?ide_webview_request_time=1764840371138" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) TraeCN/1.104.3 Chrome/138.0.7204.251 Electron/37.6.1 Safari/537.36"
+192.168.4.179 [04/Dec/2025:19:37:47 +0800] "GET /health HTTP/1.1" 404 174 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+127.0.0.1 [04/Dec/2025:19:40:31 +0800] "GET /?ide_webview_request_time=1764840371138 HTTP/1.1" 200 5807 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) TraeCN/1.104.3 Chrome/138.0.7204.251 Electron/37.6.1 Safari/537.36"
+127.0.0.1 [04/Dec/2025:19:40:32 +0800] "GET /@vite/client HTTP/1.1" 404 174 "http://localhost:8700/?ide_webview_request_time=1764840371138" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) TraeCN/1.104.3 Chrome/138.0.7204.251 Electron/37.6.1 Safari/537.36"
+Serving studio static files from C:\Users\biren\Documents\trae_projects\ai\openagents_env\Lib\site-packages\openagents\studio\build on port 8050
+192.168.4.179 [04/Dec/2025:19:56:26 +0800] "OPTIONS /api/health HTTP/1.1" 200 291 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:19:56:26 +0800] "GET /api/health HTTP/1.1" 200 2231 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:19:56:26 +0800] "GET /api/health HTTP/1.1" 200 2231 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:19:56:29 +0800] "OPTIONS /api/register HTTP/1.1" 200 291 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+HTTP Agent registration: BoldNode8061
+Agent BoldNode8061 assigned to default group 'guest'
+Registered agent BoldNode8061 in centralized registry (group: guest)
+Registered agent BoldNode8061 with network in group 'guest'
+192.168.4.179 [04/Dec/2025:19:56:29 +0800] "POST /api/register HTTP/1.1" 200 522 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:19:56:29 +0800] "OPTIONS /api/unregister HTTP/1.1" 200 291 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+HTTP Agent unregistration: BoldNode8061
+Unregistered agent BoldNode8061 from centralized registry
+Unregistered agent BoldNode8061 from network
+Unregistered agent BoldNode8061 from Thread Messaging protocol
+192.168.4.179 [04/Dec/2025:19:56:29 +0800] "POST /api/unregister HTTP/1.1" 200 356 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:19:56:29 +0800] "GET /api/health HTTP/1.1" 200 2231 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:19:56:29 +0800] "GET /api/health HTTP/1.1" 200 2231 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:19:56:29 +0800] "GET /api/health HTTP/1.1" 200 2231 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:19:56:29 +0800] "GET /api/health HTTP/1.1" 200 2231 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+HTTP Agent registration: BoldNode8061
+Agent BoldNode8061 assigned to default group 'guest'
+Registered agent BoldNode8061 in centralized registry (group: guest)
+Registered agent BoldNode8061 with network in group 'guest'
+192.168.4.179 [04/Dec/2025:19:56:29 +0800] "POST /api/register HTTP/1.1" 200 522 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:19:56:29 +0800] "GET /api/health HTTP/1.1" 200 2385 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:19:56:29 +0800] "OPTIONS /api/send_event HTTP/1.1" 200 291 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:19:56:29 +0800] "GET /api/health HTTP/1.1" 200 2385 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+Periodic dump completed: 13 messages dumped
+192.168.4.179 [04/Dec/2025:19:56:29 +0800] "POST /api/send_event HTTP/1.1" 200 1042 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:19:56:29 +0800] "POST /api/send_event HTTP/1.1" 200 2679 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:19:56:29 +0800] "POST /api/send_event HTTP/1.1" 200 511 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:19:56:29 +0800] "POST /api/send_event HTTP/1.1" 200 2679 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:19:56:37 +0800] "POST /api/send_event HTTP/1.1" 200 513 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:19:56:37 +0800] "POST /api/send_event HTTP/1.1" 200 2425 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:19:56:38 +0800] "POST /api/send_event HTTP/1.1" 200 511 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:19:56:38 +0800] "POST /api/send_event HTTP/1.1" 200 2679 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:19:56:39 +0800] "POST /api/send_event HTTP/1.1" 200 513 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:19:56:39 +0800] "POST /api/send_event HTTP/1.1" 200 2425 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:19:56:43 +0800] "POST /api/send_event HTTP/1.1" 200 509 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:19:56:43 +0800] "POST /api/send_event HTTP/1.1" 200 1014 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:19:56:44 +0800] "POST /api/send_event HTTP/1.1" 200 511 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:19:56:44 +0800] "POST /api/send_event HTTP/1.1" 200 2679 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+HTTP Agent unregistration: BoldNode8061
+192.168.4.179 [04/Dec/2025:19:56:45 +0800] "POST /api/unregister HTTP/1.1" 500 469 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:19:56:45 +0800] "GET /api/health HTTP/1.1" 200 2386 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:19:56:45 +0800] "GET /api/health HTTP/1.1" 200 2386 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+HTTP Agent registration: BoldNode8061
+Agent BoldNode8061 already registered with network
+Unregistered agent BoldNode8061 from centralized registry
+Agent BoldNode8061 assigned to default group 'guest'
+Registered agent BoldNode8061 in centralized registry (group: guest)
+Registered agent BoldNode8061 with network in group 'guest'
+192.168.4.179 [04/Dec/2025:19:56:45 +0800] "POST /api/register HTTP/1.1" 200 522 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:19:56:45 +0800] "GET /api/health HTTP/1.1" 200 2385 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:19:56:45 +0800] "GET /api/health HTTP/1.1" 200 2386 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:19:56:47 +0800] "POST /api/send_event HTTP/1.1" 200 511 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:19:56:47 +0800] "POST /api/send_event HTTP/1.1" 200 2679 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+HTTP Agent unregistration: BoldNode8061
+192.168.4.179 [04/Dec/2025:19:56:47 +0800] "POST /api/unregister HTTP/1.1" 500 469 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:19:56:47 +0800] "GET /api/health HTTP/1.1" 200 2386 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+HTTP Agent registration: BoldNode8061
+Agent BoldNode8061 already registered with network
+Unregistered agent BoldNode8061 from centralized registry
+Agent BoldNode8061 assigned to default group 'guest'
+Registered agent BoldNode8061 in centralized registry (group: guest)
+Registered agent BoldNode8061 with network in group 'guest'
+192.168.4.179 [04/Dec/2025:19:56:47 +0800] "POST /api/register HTTP/1.1" 200 522 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:19:56:47 +0800] "GET /api/health HTTP/1.1" 200 2385 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:19:56:47 +0800] "POST /api/send_event HTTP/1.1" 200 511 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:19:56:47 +0800] "POST /api/send_event HTTP/1.1" 200 2679 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:19:56:48 +0800] "POST /api/send_event HTTP/1.1" 200 513 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:19:56:48 +0800] "POST /api/send_event HTTP/1.1" 200 2425 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:19:57:17 +0800] "GET /api/health HTTP/1.1" 200 2385 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:19:57:47 +0800] "GET /api/health HTTP/1.1" 200 2386 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:19:58:17 +0800] "GET /api/health HTTP/1.1" 200 2386 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+Channel tech-talk has agents: {'BoldNode8061'}
+Message sender: BoldNode8061
+No other agents to notify in channel tech-talk - only sender BoldNode8061 present
+192.168.4.179 [04/Dec/2025:19:58:37 +0800] "POST /api/send_event HTTP/1.1" 200 655 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:19:58:43 +0800] "POST /api/send_event HTTP/1.1" 200 511 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:19:58:43 +0800] "POST /api/send_event HTTP/1.1" 200 2679 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:19:58:44 +0800] "POST /api/send_event HTTP/1.1" 200 513 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:19:58:44 +0800] "POST /api/send_event HTTP/1.1" 200 2825 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:19:58:47 +0800] "GET /api/health HTTP/1.1" 200 2385 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:19:58:51 +0800] "POST /api/send_event HTTP/1.1" 200 511 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:19:58:51 +0800] "POST /api/send_event HTTP/1.1" 200 2679 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+Channel general has agents: {'BoldNode8061'}
+Message sender: BoldNode8061
+No other agents to notify in channel general - only sender BoldNode8061 present
+192.168.4.179 [04/Dec/2025:19:58:53 +0800] "POST /api/send_event HTTP/1.1" 200 655 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:19:58:58 +0800] "POST /api/send_event HTTP/1.1" 200 509 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:19:58:58 +0800] "POST /api/send_event HTTP/1.1" 200 1014 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+HTTP Agent unregistration: BoldNode8061
+192.168.4.179 [04/Dec/2025:19:59:00 +0800] "POST /api/unregister HTTP/1.1" 500 469 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:19:59:00 +0800] "GET /api/health HTTP/1.1" 200 2386 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:19:59:00 +0800] "GET /api/health HTTP/1.1" 200 2386 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+HTTP Agent registration: BoldNode8061
+Agent BoldNode8061 already registered with network
+Unregistered agent BoldNode8061 from centralized registry
+Agent BoldNode8061 assigned to default group 'guest'
+Registered agent BoldNode8061 in centralized registry (group: guest)
+Registered agent BoldNode8061 with network in group 'guest'
+192.168.4.179 [04/Dec/2025:19:59:00 +0800] "POST /api/register HTTP/1.1" 200 522 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:19:59:00 +0800] "GET /api/health HTTP/1.1" 200 2386 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:19:59:00 +0800] "GET /api/health HTTP/1.1" 200 2386 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:19:59:02 +0800] "POST /api/send_event HTTP/1.1" 200 509 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:19:59:02 +0800] "POST /api/send_event HTTP/1.1" 200 1014 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+HTTP Agent unregistration: BoldNode8061
+192.168.4.179 [04/Dec/2025:19:59:02 +0800] "POST /api/unregister HTTP/1.1" 500 469 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:19:59:02 +0800] "GET /api/health HTTP/1.1" 200 2386 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+HTTP Agent registration: BoldNode8061
+Agent BoldNode8061 already registered with network
+Unregistered agent BoldNode8061 from centralized registry
+Agent BoldNode8061 assigned to default group 'guest'
+Registered agent BoldNode8061 in centralized registry (group: guest)
+Registered agent BoldNode8061 with network in group 'guest'
+192.168.4.179 [04/Dec/2025:19:59:02 +0800] "POST /api/register HTTP/1.1" 200 522 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:19:59:02 +0800] "GET /api/health HTTP/1.1" 200 2385 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:19:59:02 +0800] "POST /api/send_event HTTP/1.1" 200 509 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:19:59:02 +0800] "POST /api/send_event HTTP/1.1" 200 1014 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:19:59:03 +0800] "POST /api/send_event HTTP/1.1" 200 513 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:19:59:03 +0800] "POST /api/send_event HTTP/1.1" 200 2825 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:19:59:32 +0800] "GET /api/health HTTP/1.1" 200 2385 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:20:00:02 +0800] "GET /api/health HTTP/1.1" 200 2386 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:20:00:32 +0800] "GET /api/health HTTP/1.1" 200 2386 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:20:01:02 +0800] "GET /api/health HTTP/1.1" 200 2386 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:20:01:32 +0800] "GET /api/health HTTP/1.1" 200 2386 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:20:01:50 +0800] "POST /api/send_event HTTP/1.1" 200 509 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:20:01:50 +0800] "POST /api/send_event HTTP/1.1" 200 1014 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:20:01:52 +0800] "POST /api/send_event HTTP/1.1" 200 511 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:20:01:52 +0800] "POST /api/send_event HTTP/1.1" 200 3065 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:20:02:02 +0800] "GET /api/health HTTP/1.1" 200 2386 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:20:02:32 +0800] "GET /api/health HTTP/1.1" 200 2386 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:20:03:05 +0800] "GET /api/health HTTP/1.1" 200 2385 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+192.168.4.179 [04/Dec/2025:20:04:05 +0800] "GET /api/health HTTP/1.1" 200 2386 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+Using workspace directory: my_first_network
+Auto-discovered network configuration: my_first_network\network.yaml
+Loaded network configuration from my_first_network\network.yaml
+Initializing WorkspaceManager at my_first_network
+Workspace initialized successfully at my_first_network
+AgentIdentityManager initialized with session timeout=24h
+Loading 3 network mods from NetworkConfig...
+Initializing network mod openagents.mods.workspace.messaging
+Initializing Thread Messaging network mod
+Successfully loaded network mod: openagents.mods.workspace.messaging
+Initializing network mod openagents.mods.core.shared_cache
+Initializing Shared Cache mod
+Successfully loaded network mod: openagents.mods.core.shared_cache
+Could not import network mod openagents.mods.education.learning_diagnosis: No module named 'openagents.mods.education'
+Mod openagents.mods.workspace.messaging bound to network production-network-1
+Using file storage at my_first_network\mods\openagents.mods.workspace.messaging\files
+Loaded 13 messages from storage
+Initialized channels: ['general', 'tech-talk', 'admin']
+Registered network mod: openagents.mods.workspace.messaging
+Mod openagents.mods.core.shared_cache bound to network production-network-1
+Using cache storage at my_first_network\mods\openagents.mods.core.shared_cache\shared_cache
+Using files storage at my_first_network\mods\openagents.mods.core.shared_cache\shared_cache\files
+Registered network mod: openagents.mods.core.shared_cache
+Successfully loaded 2 network mods
+Created network: ProductionNetwork
+Loaded 2 network mods: ['openagents.mods.workspace.messaging', 'openagents.mods.core.shared_cache']
+Workspace path: my_first_network
+Workspace initialized with 3 mod directories
+HTTP transport listening on 0.0.0.0:8700
+Started TransportType.HTTP transport on 0.0.0.0:8700
+gRPC transport initialized
+gRPC transport listening on 0.0.0.0:8600
+Started TransportType.GRPC transport on 0.0.0.0:8600
+Centralized topology initialized with 2 transports
+Agent network 'ProductionNetwork' initialized successfully
+Network 'ProductionNetwork' started successfully
+Network mode: centralized
+Transport TransportType.HTTP: 0.0.0.0:8700
+Transport TransportType.GRPC: 0.0.0.0:8600
+Network statistics: {'network_id': 'production-network-1', 'network_name': 'ProductionNetwork', 'is_running': True, 'uptime_seconds': 0.004293918609619141, 'agent_count': 0, 'agents': {}, 'groups': {}, 'group_config': [{'name': 'guest', 'description': 'Default group for agents without specific credentials', 'agent_count': 0, 'metadata': {}, 'has_password': False}], 'default_agent_group': 'guest', 'requires_password': False, 'mods': [{'name': 'openagents.mods.workspace.messaging', 'enabled': True, 'config': {'default_channels': [{'name': 'general', 'description': 'General discussions'}, {'name': 'tech-talk', 'description': 'Technical discussions about AI'}, {'name': 'admin', 'description': 'Administrative discussions'}], 'max_thread_depth': 10}}, {'name': 'openagents.mods.core.shared_cache', 'enabled': True, 'config': {}}, {'name': 'openagents.mods.education.learning_diagnosis', 'enabled': True, 'config': {}}], 'dynamic_mods': {'loaded': [], 'count': 0, 'details': {}}, 'topology_mode': 'centralized', 'transports': [{'type': <TransportType.HTTP: 'http'>, 'config': {'host': '0.0.0.0', 'port': 8700, 'cors_enabled': True}}, {'type': <TransportType.GRPC: 'grpc'>, 'config': {'host': '0.0.0.0', 'port': 8600, 'max_message_size': 104857600, 'compression': 'gzip', 'keepalive_time': 300000, 'keepalive_timeout': 60000}}], 'manifest_transport': 'http', 'recommended_transport': 'grpc', 'max_connections': 500, 'readme': None, 'network_profile': {'discoverable': True, 'name': 'Production Learning Assistant Network', 'description': 'A production OpenAgents network for personalized learning assistance', 'tags': ['production', 'education', 'ai'], 'categories': ['education'], 'country': 'Worldwide', 'required_openagents_version': '0.7.0', 'capacity': 1000, 'authentication': {'type': 'none'}, 'host': '0.0.0.0', 'port': 8700}}
+Running network indefinitely (Ctrl+C to stop)
+Starting heartbeat monitor (interval: 300s, timeout: 300s)
+192.168.4.179 [04/Dec/2025:20:05:05 +0800] "GET /api/health HTTP/1.1" 200 2158 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+127.0.0.1 [04/Dec/2025:20:05:31 +0800] "GET /api/health HTTP/1.1" 200 2156 "-" "Python/3.14 aiohttp/3.13.2"
+192.168.4.179 [04/Dec/2025:20:06:05 +0800] "GET /api/health HTTP/1.1" 200 2157 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+127.0.0.1 [04/Dec/2025:20:06:18 +0800] "GET /api/health HTTP/1.1" 200 2157 "-" "Python/3.14 aiohttp/3.13.2"
+127.0.0.1 [04/Dec/2025:20:07:05 +0800] "GET /api/health HTTP/1.1" 200 2158 "-" "Python/3.14 aiohttp/3.13.2"
+192.168.4.179 [04/Dec/2025:20:07:05 +0800] "GET /api/health HTTP/1.1" 200 2158 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+Using workspace directory: my_first_network
+Auto-discovered network configuration: my_first_network\network.yaml
+Loaded network configuration from my_first_network\network.yaml
+Initializing WorkspaceManager at my_first_network
+Workspace initialized successfully at my_first_network
+AgentIdentityManager initialized with session timeout=24h
+Loading 3 network mods from NetworkConfig...
+Initializing network mod openagents.mods.workspace.messaging
+Initializing Thread Messaging network mod
+Successfully loaded network mod: openagents.mods.workspace.messaging
+Initializing network mod openagents.mods.core.shared_cache
+Initializing Shared Cache mod
+Successfully loaded network mod: openagents.mods.core.shared_cache
+Could not import network mod openagents.mods.education.learning_diagnosis: No module named 'openagents.mods.education'
+Mod openagents.mods.workspace.messaging bound to network production-network-1
+Using file storage at my_first_network\mods\openagents.mods.workspace.messaging\files
+Loaded 13 messages from storage
+Initialized channels: ['general', 'tech-talk', 'admin']
+Registered network mod: openagents.mods.workspace.messaging
+Mod openagents.mods.core.shared_cache bound to network production-network-1
+Using cache storage at my_first_network\mods\openagents.mods.core.shared_cache\shared_cache
+Using files storage at my_first_network\mods\openagents.mods.core.shared_cache\shared_cache\files
+Registered network mod: openagents.mods.core.shared_cache
+Successfully loaded 2 network mods
+Created network: ProductionNetwork
+Loaded 2 network mods: ['openagents.mods.workspace.messaging', 'openagents.mods.core.shared_cache']
+Workspace path: my_first_network
+Workspace initialized with 3 mod directories
+HTTP transport listening on localhost:8700
+Started TransportType.HTTP transport on localhost:8700
+gRPC transport initialized
+gRPC transport listening on localhost:8600
+Started TransportType.GRPC transport on localhost:8600
+Centralized topology initialized with 2 transports
+Agent network 'ProductionNetwork' initialized successfully
+Network 'ProductionNetwork' started successfully
+Network mode: centralized
+Transport TransportType.HTTP: localhost:8700
+Transport TransportType.GRPC: localhost:8600
+Network statistics: {'network_id': 'production-network-1', 'network_name': 'ProductionNetwork', 'is_running': True, 'uptime_seconds': 0.005156278610229492, 'agent_count': 0, 'agents': {}, 'groups': {}, 'group_config': [{'name': 'guest', 'description': 'Default group for agents without specific credentials', 'agent_count': 0, 'metadata': {}, 'has_password': False}], 'default_agent_group': 'guest', 'requires_password': False, 'mods': [{'name': 'openagents.mods.workspace.messaging', 'enabled': True, 'config': {'default_channels': [{'name': 'general', 'description': 'General discussions'}, {'name': 'tech-talk', 'description': 'Technical discussions about AI'}, {'name': 'admin', 'description': 'Administrative discussions'}], 'max_thread_depth': 10}}, {'name': 'openagents.mods.core.shared_cache', 'enabled': True, 'config': {}}, {'name': 'openagents.mods.education.learning_diagnosis', 'enabled': True, 'config': {}}], 'dynamic_mods': {'loaded': [], 'count': 0, 'details': {}}, 'topology_mode': 'centralized', 'transports': [{'type': <TransportType.HTTP: 'http'>, 'config': {'host': 'localhost', 'port': 8700, 'cors_enabled': True}}, {'type': <TransportType.GRPC: 'grpc'>, 'config': {'host': 'localhost', 'port': 8600, 'max_message_size': 104857600, 'compression': 'gzip', 'keepalive_time': 300000, 'keepalive_timeout': 60000}}], 'manifest_transport': 'http', 'recommended_transport': 'grpc', 'max_connections': 500, 'readme': None, 'network_profile': {'discoverable': True, 'name': 'Production Learning Assistant Network', 'description': 'A production OpenAgents network for personalized learning assistance', 'tags': ['production', 'education', 'ai'], 'categories': ['education'], 'country': 'Worldwide', 'required_openagents_version': '0.7.0', 'capacity': 1000, 'authentication': {'type': 'none'}, 'host': '0.0.0.0', 'port': 8700}}
+Running network indefinitely (Ctrl+C to stop)
+Starting heartbeat monitor (interval: 300s, timeout: 300s)
+::1 [04/Dec/2025:20:09:16 +0800] "GET /api/health HTTP/1.1" 200 2161 "-" "Python/3.14 aiohttp/3.13.2"
+Agent registration: diagnosis-agent
+Registered agent diagnosis-agent in centralized registry (group: guest)
+Registered agent diagnosis-agent with network in group 'guest'
+Channel tech-talk has agents: {'diagnosis-agent'}
+Message sender: diagnosis-agent
+No other agents to notify in channel tech-talk - only sender diagnosis-agent present
+::1 [04/Dec/2025:20:09:42 +0800] "GET /api/health HTTP/1.1" 200 2322 "-" "Python/3.14 aiohttp/3.13.2"
+Agent registration: planning-agent
+Registered agent planning-agent in centralized registry (group: guest)
+Registered agent planning-agent with network in group 'guest'
+Channel tech-talk has agents: {'planning-agent', 'diagnosis-agent'}
+Message sender: planning-agent
+Agents to notify: {'diagnosis-agent'}
+Broadcasting channel message to 1 agents in tech-talk: {'diagnosis-agent'}
+::1 [04/Dec/2025:20:10:15 +0800] "GET /api/health HTTP/1.1" 200 2475 "-" "Python/3.14 aiohttp/3.13.2"
+Agent registration: tutoring-agent
+Registered agent tutoring-agent in centralized registry (group: guest)
+Registered agent tutoring-agent with network in group 'guest'
+Channel tech-talk has agents: {'planning-agent', 'tutoring-agent', 'diagnosis-agent'}
+Message sender: tutoring-agent
+Agents to notify: {'planning-agent', 'diagnosis-agent'}
+Broadcasting channel message to 2 agents in tech-talk: {'planning-agent', 'diagnosis-agent'}
+::1 [04/Dec/2025:20:13:23 +0800] "OPTIONS /api/health HTTP/1.1" 200 291 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:13:23 +0800] "GET /api/health HTTP/1.1" 200 2626 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:13:23 +0800] "GET /api/health HTTP/1.1" 200 2626 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:13:31 +0800] "OPTIONS /api/register HTTP/1.1" 200 291 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+HTTP Agent registration: SmartMind4813
+Agent SmartMind4813 assigned to default group 'guest'
+Registered agent SmartMind4813 in centralized registry (group: guest)
+Registered agent SmartMind4813 with network in group 'guest'
+::1 [04/Dec/2025:20:13:31 +0800] "POST /api/register HTTP/1.1" 200 522 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:13:31 +0800] "OPTIONS /api/unregister HTTP/1.1" 200 291 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+HTTP Agent unregistration: SmartMind4813
+Unregistered agent SmartMind4813 from centralized registry
+Unregistered agent SmartMind4813 from network
+Unregistered agent SmartMind4813 from Thread Messaging protocol
+::1 [04/Dec/2025:20:13:31 +0800] "POST /api/unregister HTTP/1.1" 200 356 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:13:31 +0800] "GET /api/health HTTP/1.1" 200 2627 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:13:31 +0800] "GET /api/health HTTP/1.1" 200 2626 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:13:31 +0800] "GET /api/health HTTP/1.1" 200 2626 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:13:31 +0800] "GET /api/health HTTP/1.1" 200 2627 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+HTTP Agent registration: SmartMind4813
+Agent SmartMind4813 assigned to default group 'guest'
+Registered agent SmartMind4813 in centralized registry (group: guest)
+Registered agent SmartMind4813 with network in group 'guest'
+::1 [04/Dec/2025:20:13:31 +0800] "POST /api/register HTTP/1.1" 200 522 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:13:31 +0800] "GET /api/health HTTP/1.1" 200 2776 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:13:31 +0800] "OPTIONS /api/send_event HTTP/1.1" 200 291 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:13:31 +0800] "GET /api/health HTTP/1.1" 200 2776 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:13:31 +0800] "POST /api/send_event HTTP/1.1" 200 1212 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:13:31 +0800] "POST /api/send_event HTTP/1.1" 200 2998 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:13:31 +0800] "POST /api/send_event HTTP/1.1" 200 512 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:13:31 +0800] "POST /api/send_event HTTP/1.1" 200 2998 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:13:35 +0800] "POST /api/send_event HTTP/1.1" 200 721 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:13:42 +0800] "POST /api/send_event HTTP/1.1" 200 653 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:14:01 +0800] "GET /api/health HTTP/1.1" 200 2775 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:14:31 +0800] "GET /api/health HTTP/1.1" 200 2775 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:15:01 +0800] "GET /api/health HTTP/1.1" 200 2774 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:15:31 +0800] "GET /api/health HTTP/1.1" 200 2774 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+HTTP cache upload: Œ¢–≈Õº∆¨_20251129214237_351_126.jpg from SmartMind4813
+Saved 1 cache entries to storage
+Uploaded file Œ¢–≈Õº∆¨_20251129214237_351_126.jpg (272924 bytes) as cache 89ebe553-6143-463b-abbc-f51bfc5e7eba by SmartMind4813 (groups: [])
+::1 [04/Dec/2025:20:15:46 +0800] "POST /api/cache/upload HTTP/1.1" 200 524 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:15:53 +0800] "POST /api/send_event HTTP/1.1" 200 653 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:16:01 +0800] "GET /api/health HTTP/1.1" 200 2775 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:16:09 +0800] "POST /api/send_event HTTP/1.1" 200 653 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:16:29 +0800] "POST /api/send_event HTTP/1.1" 200 653 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:16:31 +0800] "GET /api/health HTTP/1.1" 200 2776 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:17:01 +0800] "GET /api/health HTTP/1.1" 200 2777 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:17:31 +0800] "GET /api/health HTTP/1.1" 200 2776 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:17:47 +0800] "POST /api/send_event HTTP/1.1" 200 720 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:17:48 +0800] "POST /api/send_event HTTP/1.1" 200 720 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:17:50 +0800] "POST /api/send_event HTTP/1.1" 200 720 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:17:55 +0800] "POST /api/send_event HTTP/1.1" 200 653 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:18:01 +0800] "GET /api/health HTTP/1.1" 200 2774 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:18:02 +0800] "POST /api/send_event HTTP/1.1" 200 653 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:18:31 +0800] "GET /api/health HTTP/1.1" 200 2775 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:18:35 +0800] "GET /api/health HTTP/1.1" 200 2774 "-" "Python/3.14 aiohttp/3.13.2"
+Agent registration: diagnosis-agent
+Agent diagnosis-agent already registered with network
+Agent unregistration: diagnosis-agent
+::1 [04/Dec/2025:20:18:48 +0800] "GET /api/health HTTP/1.1" 200 2775 "-" "Python/3.14 aiohttp/3.13.2"
+Agent registration: diagnosis-agent
+Agent diagnosis-agent already registered with network
+Agent unregistration: diagnosis-agent
+::1 [04/Dec/2025:20:19:01 +0800] "GET /api/health HTTP/1.1" 200 2776 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:19:28 +0800] "GET /api/health HTTP/1.1" 200 2775 "-" "Python/3.14 aiohttp/3.13.2"
+Agent registration: diagnosis-agent
+Agent diagnosis-agent already registered with network
+Agent unregistration: diagnosis-agent
+Using workspace directory: my_first_network
+Auto-discovered network configuration: my_first_network\network.yaml
+Loaded network configuration from my_first_network\network.yaml
+Initializing WorkspaceManager at my_first_network
+Workspace initialized successfully at my_first_network
+AgentIdentityManager initialized with session timeout=24h
+Loading 3 network mods from NetworkConfig...
+Initializing network mod openagents.mods.workspace.messaging
+Initializing Thread Messaging network mod
+Successfully loaded network mod: openagents.mods.workspace.messaging
+Initializing network mod openagents.mods.core.shared_cache
+Initializing Shared Cache mod
+Successfully loaded network mod: openagents.mods.core.shared_cache
+Could not import network mod openagents.mods.education.learning_diagnosis: No module named 'openagents.mods.education'
+Mod openagents.mods.workspace.messaging bound to network production-network-1
+Using file storage at my_first_network\mods\openagents.mods.workspace.messaging\files
+Loaded 13 messages from storage
+Initialized channels: ['general', 'tech-talk', 'admin']
+Registered network mod: openagents.mods.workspace.messaging
+Mod openagents.mods.core.shared_cache bound to network production-network-1
+Using cache storage at my_first_network\mods\openagents.mods.core.shared_cache\shared_cache
+Using files storage at my_first_network\mods\openagents.mods.core.shared_cache\shared_cache\files
+Loaded 1 cache entries from storage
+Registered network mod: openagents.mods.core.shared_cache
+Successfully loaded 2 network mods
+Created network: ProductionNetwork
+Loaded 2 network mods: ['openagents.mods.workspace.messaging', 'openagents.mods.core.shared_cache']
+Workspace path: my_first_network
+Workspace initialized with 3 mod directories
+HTTP transport listening on localhost:8700
+Started TransportType.HTTP transport on localhost:8700
+gRPC transport initialized
+gRPC transport listening on localhost:8600
+Started TransportType.GRPC transport on localhost:8600
+Centralized topology initialized with 2 transports
+Agent network 'ProductionNetwork' initialized successfully
+Network 'ProductionNetwork' started successfully
+Network mode: centralized
+Transport TransportType.HTTP: localhost:8700
+Transport TransportType.GRPC: localhost:8600
+Network statistics: {'network_id': 'production-network-1', 'network_name': 'ProductionNetwork', 'is_running': True, 'uptime_seconds': 0.005418539047241211, 'agent_count': 0, 'agents': {}, 'groups': {}, 'group_config': [{'name': 'guest', 'description': 'Default group for agents without specific credentials', 'agent_count': 0, 'metadata': {}, 'has_password': False}], 'default_agent_group': 'guest', 'requires_password': False, 'mods': [{'name': 'openagents.mods.workspace.messaging', 'enabled': True, 'config': {'default_channels': [{'name': 'general', 'description': 'General discussions'}, {'name': 'tech-talk', 'description': 'Technical discussions about AI'}, {'name': 'admin', 'description': 'Administrative discussions'}], 'max_thread_depth': 10}}, {'name': 'openagents.mods.core.shared_cache', 'enabled': True, 'config': {}}, {'name': 'openagents.mods.education.learning_diagnosis', 'enabled': True, 'config': {}}], 'dynamic_mods': {'loaded': [], 'count': 0, 'details': {}}, 'topology_mode': 'centralized', 'transports': [{'type': <TransportType.HTTP: 'http'>, 'config': {'host': 'localhost', 'port': 8700, 'cors_enabled': True}}, {'type': <TransportType.GRPC: 'grpc'>, 'config': {'host': 'localhost', 'port': 8600, 'max_message_size': 104857600, 'compression': 'gzip', 'keepalive_time': 300000, 'keepalive_timeout': 60000}}], 'manifest_transport': 'http', 'recommended_transport': 'grpc', 'max_connections': 500, 'readme': None, 'network_profile': {'discoverable': True, 'name': 'Production Learning Assistant Network', 'description': 'A production OpenAgents network for personalized learning assistance', 'tags': ['production', 'education', 'ai'], 'categories': ['education'], 'country': 'Worldwide', 'required_openagents_version': '0.7.0', 'capacity': 1000, 'authentication': {'type': 'none'}, 'host': '0.0.0.0', 'port': 8700}}
+Running network indefinitely (Ctrl+C to stop)
+Starting heartbeat monitor (interval: 300s, timeout: 300s)
+::1 [04/Dec/2025:20:20:05 +0800] "GET /api/health HTTP/1.1" 200 2161 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:20:23 +0800] "GET /api/health HTTP/1.1" 200 2162 "-" "Python/3.14 aiohttp/3.13.2"
+Agent registration: diagnosis-agent
+Registered agent diagnosis-agent in centralized registry (group: guest)
+Registered agent diagnosis-agent with network in group 'guest'
+Channel tech-talk has agents: {'diagnosis-agent'}
+Message sender: diagnosis-agent
+No other agents to notify in channel tech-talk - only sender diagnosis-agent present
+::1 [04/Dec/2025:20:20:53 +0800] "GET /api/health HTTP/1.1" 200 2322 "-" "Python/3.14 aiohttp/3.13.2"
+Agent registration: planning-agent
+Registered agent planning-agent in centralized registry (group: guest)
+Registered agent planning-agent with network in group 'guest'
+Channel tech-talk has agents: {'diagnosis-agent', 'planning-agent'}
+Message sender: planning-agent
+Agents to notify: {'diagnosis-agent'}
+Broadcasting channel message to 1 agents in tech-talk: {'diagnosis-agent'}
+::1 [04/Dec/2025:20:21:05 +0800] "GET /api/health HTTP/1.1" 200 2474 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+Agent unregistration: tutoring-agent
+::1 [04/Dec/2025:20:21:17 +0800] "GET /api/health HTTP/1.1" 200 2474 "-" "Python/3.14 aiohttp/3.13.2"
+Agent registration: tutoring-agent
+Registered agent tutoring-agent in centralized registry (group: guest)
+Registered agent tutoring-agent with network in group 'guest'
+Channel tech-talk has agents: {'diagnosis-agent', 'tutoring-agent', 'planning-agent'}
+Message sender: tutoring-agent
+Agents to notify: {'diagnosis-agent', 'planning-agent'}
+Broadcasting channel message to 2 agents in tech-talk: {'diagnosis-agent', 'planning-agent'}
+::1 [04/Dec/2025:20:22:05 +0800] "GET /api/health HTTP/1.1" 200 2627 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:22:26 +0800] "GET /api/health HTTP/1.1" 200 2627 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:22:26 +0800] "GET /api/health HTTP/1.1" 200 2626 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+HTTP Agent registration: SmartMind4813
+Agent SmartMind4813 assigned to default group 'guest'
+Registered agent SmartMind4813 in centralized registry (group: guest)
+Registered agent SmartMind4813 with network in group 'guest'
+::1 [04/Dec/2025:20:22:26 +0800] "POST /api/register HTTP/1.1" 200 522 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:22:26 +0800] "GET /api/health HTTP/1.1" 200 2777 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:22:26 +0800] "POST /api/send_event HTTP/1.1" 200 1212 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:22:26 +0800] "GET /api/health HTTP/1.1" 200 2776 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:22:26 +0800] "POST /api/send_event HTTP/1.1" 200 512 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:22:26 +0800] "POST /api/send_event HTTP/1.1" 200 2998 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:22:29 +0800] "POST /api/send_event HTTP/1.1" 200 720 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:22:34 +0800] "POST /api/send_event HTTP/1.1" 200 653 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:22:49 +0800] "POST /api/send_event HTTP/1.1" 200 653 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:22:56 +0800] "POST /api/send_event HTTP/1.1" 200 720 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:22:56 +0800] "GET /api/health HTTP/1.1" 200 2777 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:23:00 +0800] "POST /api/send_event HTTP/1.1" 200 721 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:23:02 +0800] "POST /api/send_event HTTP/1.1" 200 2102 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:23:06 +0800] "POST /api/send_event HTTP/1.1" 200 510 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:23:06 +0800] "POST /api/send_event HTTP/1.1" 200 1331 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:23:06 +0800] "POST /api/send_event HTTP/1.1" 200 514 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:23:06 +0800] "POST /api/send_event HTTP/1.1" 200 4262 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:23:10 +0800] "POST /api/send_event HTTP/1.1" 200 512 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:23:10 +0800] "POST /api/send_event HTTP/1.1" 200 2998 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:23:11 +0800] "POST /api/send_event HTTP/1.1" 200 510 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:23:11 +0800] "POST /api/send_event HTTP/1.1" 200 1331 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:23:11 +0800] "POST /api/send_event HTTP/1.1" 200 720 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:23:12 +0800] "POST /api/send_event HTTP/1.1" 200 721 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:23:12 +0800] "POST /api/send_event HTTP/1.1" 200 2102 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+HTTP Agent unregistration: SmartMind4813
+::1 [04/Dec/2025:20:23:14 +0800] "POST /api/unregister HTTP/1.1" 500 469 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:23:14 +0800] "GET /api/health HTTP/1.1" 200 2775 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:23:14 +0800] "GET /api/health HTTP/1.1" 200 2774 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+HTTP Agent registration: SmartMind4813
+Agent SmartMind4813 already registered with network
+Unregistered agent SmartMind4813 from centralized registry
+Agent SmartMind4813 assigned to default group 'guest'
+Registered agent SmartMind4813 in centralized registry (group: guest)
+Registered agent SmartMind4813 with network in group 'guest'
+::1 [04/Dec/2025:20:23:14 +0800] "POST /api/register HTTP/1.1" 200 522 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:23:14 +0800] "GET /api/health HTTP/1.1" 200 2774 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:23:14 +0800] "GET /api/health HTTP/1.1" 200 2773 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:24:30 +0800] "POST /api/send_event HTTP/1.1" 200 2102 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:24:30 +0800] "GET /api/health HTTP/1.1" 200 2775 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+HTTP Agent unregistration: SmartMind4813
+::1 [04/Dec/2025:20:24:30 +0800] "POST /api/unregister HTTP/1.1" 500 469 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+HTTP Agent registration: SmartMind4813
+Agent SmartMind4813 already registered with network
+Unregistered agent SmartMind4813 from centralized registry
+Agent SmartMind4813 assigned to default group 'guest'
+Registered agent SmartMind4813 in centralized registry (group: guest)
+Registered agent SmartMind4813 with network in group 'guest'
+::1 [04/Dec/2025:20:24:30 +0800] "POST /api/register HTTP/1.1" 200 522 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:24:31 +0800] "GET /api/health HTTP/1.1" 200 2776 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:24:31 +0800] "POST /api/send_event HTTP/1.1" 200 2102 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:24:32 +0800] "POST /api/send_event HTTP/1.1" 200 721 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:24:33 +0800] "POST /api/send_event HTTP/1.1" 200 720 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:24:39 +0800] "POST /api/send_event HTTP/1.1" 200 653 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:24:54 +0800] "POST /api/send_event HTTP/1.1" 200 653 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:25:01 +0800] "GET /api/health HTTP/1.1" 200 2775 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:25:08 +0800] "POST /api/send_event HTTP/1.1" 200 653 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:25:31 +0800] "GET /api/health HTTP/1.1" 200 2775 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:26:01 +0800] "GET /api/health HTTP/1.1" 200 2777 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:26:31 +0800] "GET /api/health HTTP/1.1" 200 2774 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
+::1 [04/Dec/2025:20:27:01 +0800] "GET /api/health HTTP/1.1" 200 2773 "http://192.168.4.179:8050/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0"
