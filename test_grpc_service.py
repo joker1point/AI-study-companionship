@@ -27,8 +27,8 @@ def test_http_connection(host, port):
     import requests
     
     try:
-        # 测试OpenAgents的manifest端点
-        url = f"http://{host}:{port}/manifest"
+        # 测试OpenAgents的健康检查端点
+        url = f"http://{host}:{port}/health"
         response = requests.get(url, timeout=5)
         return {
             "status": response.status_code,
@@ -46,7 +46,7 @@ def main():
     print()
     
     # 默认配置
-    host = "192.168.4.179"
+    host = "localhost"
     http_port = 8700
     grpc_port = 8600
     
